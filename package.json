@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/ChumakovAndrew/udemy_project_food#readme",
   "dependencies": {
+    "babel-loader": "^9.1.2",
     "browser-sync": "^2.27.11",
+    "json-server": "^0.17.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   }

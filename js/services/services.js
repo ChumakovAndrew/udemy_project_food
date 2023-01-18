@@ -7,4 +7,18 @@ async function getResource(url) {
 
     return await res.json();
 }
+
+const postData = async (url, data) => {
+    let res = await fetch(url, {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: data
+    });
+
+    return await res.json();
+};
+
 export default getResource
+export {postData}

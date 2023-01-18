@@ -1,7 +1,7 @@
 function tabs() {
-	let tabs = document.querySelectorAll('.tabheader__item'),
-		tabsContent = document.querySelectorAll('.tabcontent'),
-		tabsParent = document.querySelector('.tabheader__items');
+	const tabs = document.querySelectorAll('.tabheader__item'),
+        tabsParent = document.querySelector('.tabheader__items'),
+		    tabsContent = document.querySelectorAll('.tabcontent');
 
   
   const defaultTab = 0  // указывает какой таб показывать по умолчанию

@@ -1,10 +1,7 @@
-function tabs() {
+function tabs(defaultTab) {
 	const tabs = document.querySelectorAll('.tabheader__item'),
         tabsParent = document.querySelector('.tabheader__items'),
 		    tabsContent = document.querySelectorAll('.tabcontent');
-
-  
-  const defaultTab = 0  // указывает какой таб показывать по умолчанию
   
   
         
@@ -19,7 +16,7 @@ function tabs() {
         
         
   function showTab(i = 0) {  // скрывает все табы, а после этого показывает таб заданный по умолчанию либо тот на который кликнули
-    
+
     tabsContent.forEach((item,) => {
       item.style.display = 'none'
     })

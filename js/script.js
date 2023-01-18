@@ -5,7 +5,7 @@ import tabs from './modules/tabs';
 
 window.addEventListener('DOMContentLoaded', function() {
 
-    tabs();
+    tabs('0');
     slider();
     calc();
     timer('.timer', '2023-10-12')

@@ -366,13 +366,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function tabs() {
+function tabs(defaultTab) {
 	const tabs = document.querySelectorAll('.tabheader__item'),
         tabsParent = document.querySelector('.tabheader__items'),
 		    tabsContent = document.querySelectorAll('.tabcontent');
-
-  
-  const defaultTab = 0  // указывает какой таб показывать по умолчанию
   
   
         
@@ -387,7 +384,7 @@ function tabs() {
         
         
   function showTab(i = 0) {  // скрывает все табы, а после этого показывает таб заданный по умолчанию либо тот на который кликнули
-    
+
     tabsContent.forEach((item,) => {
       item.style.display = 'none'
     })
@@ -493,7 +490,7 @@ __webpack_require__.r(__webpack_exports__);
 
 window.addEventListener('DOMContentLoaded', function() {
 
-    (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])('0');
     (0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__["default"])();
     (0,_modules_calc__WEBPACK_IMPORTED_MODULE_1__["default"])();
     (0,_JS_task_answers_JS_step_25_Food_js_modules_timer__WEBPACK_IMPORTED_MODULE_0__["default"])('.timer', '2023-10-12')
